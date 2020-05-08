@@ -23,6 +23,8 @@
 // const what = 234.386758;
 // console.log(what);
 
-// //String
-// const what = "Nicolas";
-// console.log(what);
+const somgthing = "something"
+
+const daysOfWeek = ["mon","tue","wed","thu","fri","sat","sun", true, somgthing];
+const num =4;
+console.log(daysOfWeek[num]);
