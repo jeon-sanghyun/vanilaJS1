@@ -58,6 +58,7 @@ console.log(console);
 // const greetNicolas = sayHello("nicolas",15);
 // console.log(greetNicolas)
 
+/*
 const calculator = {
     plus : function(a,b){
         return a + b
@@ -91,3 +92,9 @@ console.log(multipleConst)
 
 const powerConst = calculator.power(5,2)
 console.log(powerConst)
+*/
+
+const potato = document.getElementById("titleID")
+
+potato.innerHTML = "Hi From JS by potato"
+
