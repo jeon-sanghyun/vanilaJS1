@@ -29,6 +29,7 @@
 // const num =4;
 // console.log(daysOfWeek[num]);
 
+/*
 const nicoInfo = {
     name:"Nicolas",
     age:55,
@@ -47,3 +48,12 @@ const num =2;
 console.log(nicoInfo.gender);
 nicoInfo.gender = "female"
 console.log(nicoInfo.gender);
+console.log(console);
+*/
+
+function sayHello(potato, chicken){
+    console.log('hello!', potato, "you have" , chicken), "years of age";
+}
+
+sayHello("nicolas",15);
+console.log(   )
