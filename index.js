@@ -51,9 +51,43 @@ console.log(nicoInfo.gender);
 console.log(console);
 */
 
-function sayHello(potato, chicken){
-    console.log('hello!', potato, "you have" , chicken), "years of age";
+// function sayHello(potato, chicken){
+//     return `hello ${potato} you are ${chicken} years old`;
+// }
+
+// const greetNicolas = sayHello("nicolas",15);
+// console.log(greetNicolas)
+
+const calculator = {
+    plus : function(a,b){
+        return a + b
+    },
+    minus: function(a,b){
+        return a-b
+    },
+    divide: function(a,b){
+        return a/b
+    },
+    multiple: function(a,b){
+        return a*b
+    },
+    power: function(a,b){
+        return a**b
+    }
 }
 
-sayHello("nicolas",15);
-console.log(   )
+
+const plusConst = calculator.plus(5,5)
+console.log(plusConst)
+
+const minusConst = calculator.minus(5,2)
+console.log(minusConst)
+
+const divideConst = calculator.divide(10,2)
+console.log(divideConst)
+
+const multipleConst = calculator.multiple(5,2)
+console.log(multipleConst)
+
+const powerConst = calculator.power(5,2)
+console.log(powerConst)
