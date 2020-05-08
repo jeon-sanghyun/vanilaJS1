@@ -23,8 +23,27 @@
 // const what = 234.386758;
 // console.log(what);
 
-const somgthing = "something"
+// const somgthing = "something"
 
-const daysOfWeek = ["mon","tue","wed","thu","fri","sat","sun", true, somgthing];
-const num =4;
-console.log(daysOfWeek[num]);
+// const daysOfWeek = ["mon","tue","wed","thu","fri","sat","sun", true, somgthing];
+// const num =4;
+// console.log(daysOfWeek[num]);
+
+const nicoInfo = {
+    name:"Nicolas",
+    age:55,
+    gender:"male",
+    isHandsome:true,
+    favmovies:[
+        "along the gods", "lotr","oldboy"
+    ],
+    favfood:[
+        {name:"kimchi", fatty:false},
+        {name:"chees burger", fatty:true}
+    ]
+};
+
+const num =2;
+console.log(nicoInfo.gender);
+nicoInfo.gender = "female"
+console.log(nicoInfo.gender);
