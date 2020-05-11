@@ -8,13 +8,22 @@ body{
 }
 
 
-h1{
+body{
     color :white;
     transition: color .5s ease-in-out;
 }
 
 .clicked{
     color:#2a4c1a;
+}
+
+.form, 
+.greetings {
+    display: none;
+}
+
+.showing{
+    display: block;
 }
 
  /* #titleID{
