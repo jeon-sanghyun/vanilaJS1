@@ -96,6 +96,9 @@ console.log(powerConst)
 
 const potato = document.querySelector("#titleID");
 
+const BASE_COLOR = "rgb(0, 255, 255)";
+const OTHER_COLOR = "rgb(0, 0, 255)";
+
 // potato.innerHTML = "Hi From JS by potato";
 // potato.style.color= "blue";
 // // console.dir(titleID);
@@ -106,19 +109,47 @@ const potato = document.querySelector("#titleID");
 // }
 
 function handleClick(){
-    potato.style.color = "green";
+    const currentColor = potato.style.color;
+    console.log("currentcolor:", currentColor);
+    if(currentColor === BASE_COLOR){
+        console.log("truecolor:", currentColor);
+        potato.style.color = OTHER_COLOR;
+        
+    }
+    else{
+        console.log("falsecolor:", currentColor);
+        potato.style.color = BASE_COLOR;
+        
+    }
+ }
+
+function init(){
+    potato.style.color = BASE_COLOR;
+    potato.addEventListener("click", handleClick);
+    console.log("initcolor:",potato.style.color)
+}
+init();
+
+function handleoffline(){
+    console.log("sdasg");
 }
 
-potato.addEventListener("click", handleClick)
+function handleonline(){
+    console.log("wel")
+}
 
-const age = prompt("How old are you");
+window.addEventListener("offline", handleoffline)
+window.addEventListener("online",handleonline)
 
-if(age >= 18 && age <= 21){
-    console.log("you can drind but you should not");
-}
-else if (age>21){
-    console.log("go ahead")
-}
-else{
-    console.log("too young")
-}
+
+// const age = prompt("How old are you");
+
+// if(age >= 18 && age <= 21){
+//     console.log("you can drind but you should not");
+// }
+// else if (age>21){
+//     console.log("go ahead")
+// }
+// else{
+//     console.log("too young")
+// }
