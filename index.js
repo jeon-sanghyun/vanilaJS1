@@ -96,50 +96,73 @@ console.log(powerConst)
 
 const potato = document.querySelector("#titleID");
 
-const BASE_COLOR = "rgb(0, 255, 255)";
-const OTHER_COLOR = "rgb(0, 0, 255)";
-
-// potato.innerHTML = "Hi From JS by potato";
-// potato.style.color= "blue";
-// // console.dir(titleID);
-// document.title = "i own you now";
-
-// function handleResize(){
-//     console.log("I have been resized")
-// }
+const CLICKED_CLASS = "clicked";
 
 function handleClick(){
-    const currentColor = potato.style.color;
-    console.log("currentcolor:", currentColor);
-    if(currentColor === BASE_COLOR){
-        console.log("truecolor:", currentColor);
-        potato.style.color = OTHER_COLOR;
+    
+    potato.classList.toggle(CLICKED_CLASS)
+    
+    // const hasClass =potato.classList.contains(CLICKED_CLASS)
+    // if(!hasClass){
+    //     potato.classList.add(CLICKED_CLASS)
+    // }else{
+    //     potato.classList.remove(CLICKED_CLASS)
+
+    // }
+
+    
+    // const currentClass = potato.className;
+    // if(currentClass !== CLICKED_CLASS){
+    //     potato.classList.add(CLICKED_CLASS)
+    // } else{
+    //     potato.classList.remove(CLICKED_CLASS);
+    // }
+}
+
+// const BASE_COLOR = "rgb(0, 255, 255)";
+// const OTHER_COLOR = "rgb(0, 0, 255)";
+
+// // potato.innerHTML = "Hi From JS by potato";
+// // potato.style.color= "blue";
+// // // console.dir(titleID);
+// // document.title = "i own you now";
+
+// // function handleResize(){
+// //     console.log("I have been resized")
+// // }
+
+// function handleClick(){
+//     const currentColor = potato.style.color;
+//     console.log("currentcolor:", currentColor);
+//     if(currentColor === BASE_COLOR){
+//         console.log("truecolor:", currentColor);
+//         potato.style.color = OTHER_COLOR;
         
-    }
-    else{
-        console.log("falsecolor:", currentColor);
-        potato.style.color = BASE_COLOR;
+//     }
+//     else{
+//         console.log("falsecolor:", currentColor);
+//         potato.style.color = BASE_COLOR;
         
-    }
- }
+//     }
+//  }
 
 function init(){
-    potato.style.color = BASE_COLOR;
+    // potato.style.color = BASE_COLOR;
     potato.addEventListener("click", handleClick);
-    console.log("initcolor:",potato.style.color)
+    // console.log("initcolor:",potato.style.color)
 }
 init();
 
-function handleoffline(){
-    console.log("sdasg");
-}
+// function handleoffline(){
+//     console.log("sdasg");
+// }
 
-function handleonline(){
-    console.log("wel")
-}
+// function handleonline(){
+//     console.log("wel")
+// }
 
-window.addEventListener("offline", handleoffline)
-window.addEventListener("online",handleonline)
+// window.addEventListener("offline", handleoffline)
+// window.addEventListener("online",handleonline)
 
 
 // const age = prompt("How old are you");

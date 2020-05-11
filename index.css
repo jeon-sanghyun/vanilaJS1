@@ -3,7 +3,18 @@ body{
     background-color: peru;
 }
 
+.btn{
+    cursor: pointer;
+}
+
+
 h1{
+    color :white;
+    transition: color .5s ease-in-out;
+}
+
+.clicked{
+    color:#2a4c1a;
 }
 
  /* #titleID{
