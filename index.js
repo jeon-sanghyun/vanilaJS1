@@ -94,7 +94,8 @@ const powerConst = calculator.power(5,2)
 console.log(powerConst)
 */
 
-const potato = document.getElementById("titleID")
+const potato = document.getElementById("titleID");
 
-potato.innerHTML = "Hi From JS by potato"
-
+potato.innerHTML = "Hi From JS by potato";
+potato.style.color= "blue";
+console.dir(titleID);
