@@ -94,8 +94,19 @@ const powerConst = calculator.power(5,2)
 console.log(powerConst)
 */
 
-const potato = document.getElementById("titleID");
+const potato = document.querySelector("#titleID");
 
-potato.innerHTML = "Hi From JS by potato";
-potato.style.color= "blue";
-console.dir(titleID);
+// potato.innerHTML = "Hi From JS by potato";
+// potato.style.color= "blue";
+// // console.dir(titleID);
+// document.title = "i own you now";
+
+// function handleResize(){
+//     console.log("I have been resized")
+// }
+
+function handleClick(){
+    potato.style.color = "green";
+}
+
+potato.addEventListener("click", handleClick)
